@@ -258,7 +258,7 @@ fn main() {
 **C on steroids, but without strong steroids**
 
 Version: 1.0  
-Author: Андрей (командир)
+Author: Андрей
 
 ## Features
 - Null Variable (`let name;`)
