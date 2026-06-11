@@ -1,7 +1,12 @@
+---
+
+🐺 РУССКАЯ ДОКУМЕНТАЦИЯ C-- 1.0 (ФИНАЛЬНАЯ)
+
+```markdown
 # 🐺 C-- — официальная документация языка
 
 **Версия:** 1.0  
-**Автор:** Андрей (командир)  
+**Автор:** Андрей  
 **Философия:** C на стероидах, но без сильных стероидов
 
 ---
@@ -40,23 +45,23 @@
 
 | Команда | Что делает | Пример |
 |---------|------------|--------|
-| `say!(...)` | Вывод на экран | `say!("Привет, ", name)` |
-| `input("тип", var)` | Ввод с проверкой типа | `input("int", age)` |
+| `say!(...)` | Вывод на экран | say("Hello World")
+| `input(тип, var)` | Ввод с проверкой типа | `input(int, age)` |
 | `waitEnter()` | Ждёт нажатие Enter | `waitEnter()` |
 | `clearScreen()` | Очищает экран | `clearScreen()` |
 
 ### Типы для `input`:
-- `"char"` — строка (текст)
-- `"int"` — целое число
-- `"float"` — дробное число
-- `"boolean"` — `true` или `false`
+- `char` — строка (текст)
+- `int` — целое число
+- `float` — дробное число
+- `boolean` — `true` или `false`
 
 ### Проверка типа после input (опционально):
 ```c--
 var age
-input("int", age)
+input(int, age)
 
-if age != "int" {
+if age != int {
     say!("Ошибка: нужно ввести число!")
 } else {
     say!("Тебе ", age, " лет")
@@ -123,7 +128,7 @@ if backup.txt == error {
 >= Больше или равно if age >= 18
 <= Меньше или равно if age <= 18
 and / && Логическое И if age >= 18 and hasLicense == true
-or / \|\| Логическое ИЛИ if isStudent or isWeekend
+or / `  `
 ! Логическое НЕ if !isReady
 
 6.2. Инкремент и декремент
@@ -215,7 +220,7 @@ fn main() {
 Три кита уже подключены:
 
 · stdio.h
-· stdlib.h
+· stdlib.h 
 · string.h
 
 Синтаксис:
@@ -289,7 +294,7 @@ fn main() {
         say!("2. Добавить задачу")
         say!("3. Очистить всё")
         say!("4. Выход")
-        input("int", choice)
+        input(int, choice)
         
         if choice == 1 {
             if fileExists("tasks.txt") == true {
@@ -307,7 +312,7 @@ fn main() {
             
         } else if choice == 2 {
             say!("Введи задачу")
-            input("char", task)
+            input(char, task)
             updateFile("tasks.txt", task + "\n")
             if tasks.txt == error {
                 say!("Ошибка при сохранении задачи!")
@@ -341,3 +346,7 @@ fn main() {
 ```
 
 ---
+
+Конец документации C-- 1.0 🐺🔥
+
+- - -
